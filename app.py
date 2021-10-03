@@ -16,4 +16,8 @@ import numpy
 import schedule
 from time import sleep
 
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.reply_to(message, 'Halo')
+    
 bot.polling(none_stop=True, interval=2, timeout=90)
