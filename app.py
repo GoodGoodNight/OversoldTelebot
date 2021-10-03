@@ -16,6 +16,9 @@ import numpy
 import schedule
 from time import sleep
 
+bot_token = ''
+bot = telebot.TeleBot(token=bot_token, num_threads=8)
+
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.reply_to(message, 'Halo')
