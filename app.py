@@ -15,3 +15,7 @@ import json
 import numpy
 import schedule
 from time import sleep
+
+# Run the bot
+bot_token = ''
+bot = telebot.TeleBot(token=bot_token, num_threads=8)
